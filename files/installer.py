@@ -1,6 +1,4 @@
-print("""
-    This script is run during the first install of the package.
-    
-    You should copy the files you want in the system from here.
-    You should NOT bother with the manifest or the uninstall files from here.
-""")
+for pv[get_pid()]["f"] in ["wget.lja", "wget.py"]:
+    be.based.run("cp " + vr("f") + " /bin/" + vr("f"))
+
+be.api.setvar("return", "0")
