@@ -11,7 +11,7 @@ if "network" in be.devices and be.devices["network"][0].connected:
                 else vr("args")[2]
             ),
         )
-        with be.api.fopen(vr("nam"), "wb") as pv[get_pid()]["filee"]:
+        with be.api.fs.open(vr("nam"), "wb") as pv[get_pid()]["filee"]:
             if vr("filee") is not None:
                 vr("filee").write(be.devices["network"][0].get(vr("args")[1]).content)
             else:
